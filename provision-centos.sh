@@ -1,7 +1,14 @@
 yum -y update
 
+yum install -y epel-release nginx
+ps aux | grep nginx
 
-# sudo apt install python3-pip
+# sudo service nginx start
+systemctl enable nginx
+systemctl start nginx
+
+
+# sudo aptsystemctl enable nginxinstall python3-pip
 
 # sudo apt-get -y install ansible
 
